@@ -4,9 +4,9 @@ import { Mail, Github, Linkedin, Send, MessageSquare } from "lucide-react"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
 
-const SERVICE_ID = "service_9j62b4h"
-const TEMPLATE_ID = "template_voxvd9o"
-const PUBLIC_KEY = "aeBCUUwWg9_U5shCm"
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
 
 const socials = [
   {
